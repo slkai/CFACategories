@@ -11,6 +11,11 @@
 @interface UIColor (CFA)
 
 /// 16进制颜色
-+ (UIColor *) colorWithHex:(NSString *)hexColor;
++(UIColor *)colorWithHex:(NSString *)hexColor;
+
+/// 随机色
++(UIColor *)randomColor;
+
+
 
 @end

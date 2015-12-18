@@ -10,7 +10,7 @@
 
 @implementation UIColor (CFA)
 
-+ (UIColor *) colorWithHex:(NSString *)hexColor
++ (UIColor *)colorWithHex:(NSString *)hexColor
 {
     unsigned int red,green,blue;
     NSRange range;
@@ -26,6 +26,11 @@
     [[NSScanner scannerWithString:[hexColor substringWithRange:range]] scanHexInt:&blue];
     
     return [UIColor colorWithRed:red green:green blue:blue];
+}
+
++(UIColor *)randomColor
+{
+
 }
 
 @end
